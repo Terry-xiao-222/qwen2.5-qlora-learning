@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments and local configuration
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# IDE / OS
+.vscode/
+.idea/
+.playwright-cli/
+.DS_Store
+Thumbs.db
+
+# Hugging Face caches and experiment logs
+.cache/
+wandb/
+runs/
+
+# Training products can contain multi-GB weights and optimizer states.
+# Reproduce them locally with train_lora.py instead of committing them.
+outputs/
+checkpoints/
+*.safetensors
+*.bin
+*.pt
